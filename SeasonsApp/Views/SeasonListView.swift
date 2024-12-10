@@ -9,14 +9,14 @@ import SwiftUI
 
 struct SeasonListView: View {
     var body: some View {
-        List{
-            Text("Seasons")
-                .font(.system(size: 50.0, weight: .bold, design: .default))
-            
-            SeasonsView(providedseason: Summer)
-            SeasonsView(providedseason: Autumn)
-            SeasonsView(providedseason: Winter)
-            SeasonsView(providedseason: Spring)
+        NavigationStack{
+            List{
+                SeasonsView(providedseason: Summer)
+                SeasonsView(providedseason: Autumn)
+                SeasonsView(providedseason: Winter)
+                SeasonsView(providedseason: Spring)
+            }
+            .navigationTitle("The Seasons")
         }
     }
 }
