@@ -6,17 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E917442E2D08915400EC6FA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E917442B2D08915400EC6FA0 /* ContentView.swift */; };
+		E917442F2D08915400EC6FA0 /* SeasonsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E917442C2D08915400EC6FA0 /* SeasonsAppApp.swift */; };
+		E91744302D08915400EC6FA0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91744282D08915400EC6FA0 /* Preview Assets.xcassets */; };
+		E91744312D08915400EC6FA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E917442A2D08915400EC6FA0 /* Assets.xcassets */; };
+		E91744382D08922200EC6FA0 /* SeasonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91744372D08922200EC6FA0 /* SeasonListView.swift */; };
+		E917443A2D08922F00EC6FA0 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91744392D08922F00EC6FA0 /* Season.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		E91744172D08914300EC6FA0 /* SeasonsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeasonsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E91744282D08915400EC6FA0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E917442A2D08915400EC6FA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E917442B2D08915400EC6FA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E917442C2D08915400EC6FA0 /* SeasonsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsAppApp.swift; sourceTree = "<group>"; };
+		E91744372D08922200EC6FA0 /* SeasonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonListView.swift; sourceTree = "<group>"; };
+		E91744392D08922F00EC6FA0 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		E91744192D08914300EC6FA0 /* SeasonsApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SeasonsApp;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E91744142D08914300EC6FA0 /* Frameworks */ = {
@@ -32,7 +39,7 @@
 		E917440E2D08914300EC6FA0 = {
 			isa = PBXGroup;
 			children = (
-				E91744192D08914300EC6FA0 /* SeasonsApp */,
+				E917442D2D08915400EC6FA0 /* SeasonsApp */,
 				E91744182D08914300EC6FA0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +50,43 @@
 				E91744172D08914300EC6FA0 /* SeasonsApp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E91744292D08915400EC6FA0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E917442A2D08915400EC6FA0 /* Assets.xcassets */,
+				E91744282D08915400EC6FA0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E917442D2D08915400EC6FA0 /* SeasonsApp */ = {
+			isa = PBXGroup;
+			children = (
+				E917442C2D08915400EC6FA0 /* SeasonsAppApp.swift */,
+				E91744332D0891AC00EC6FA0 /* Model */,
+				E91744322D08916E00EC6FA0 /* Views */,
+				E91744292D08915400EC6FA0 /* Preview Content */,
+			);
+			path = SeasonsApp;
+			sourceTree = "<group>";
+		};
+		E91744322D08916E00EC6FA0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E917442B2D08915400EC6FA0 /* ContentView.swift */,
+				E91744372D08922200EC6FA0 /* SeasonListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E91744332D0891AC00EC6FA0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E91744392D08922F00EC6FA0 /* Season.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +103,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				E91744192D08914300EC6FA0 /* SeasonsApp */,
 			);
 			name = SeasonsApp;
 			packageProductDependencies = (
@@ -109,6 +150,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E91744302D08915400EC6FA0 /* Preview Assets.xcassets in Resources */,
+				E91744312D08915400EC6FA0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E917443A2D08922F00EC6FA0 /* Season.swift in Sources */,
+				E917442E2D08915400EC6FA0 /* ContentView.swift in Sources */,
+				E917442F2D08915400EC6FA0 /* SeasonsAppApp.swift in Sources */,
+				E91744382D08922200EC6FA0 /* SeasonListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
